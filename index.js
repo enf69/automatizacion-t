@@ -1,4 +1,4 @@
-//Inicio de sesion en linkdin con una cuneta creada
+//Creacion de nuevo usuario en twitch hasta llegar a recaptcha
 //llamamos a la dependendia
 const {Builder, By, Key, until} = require("selenium-webdriver");
 
@@ -36,7 +36,7 @@ const {Builder, By, Key, until} = require("selenium-webdriver");
     let anionac = driver.findElement({xpath:'/html/body/div[3]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[3]/div/div[2]/div[3]/div/input'});
     await driver.sleep(1000);
     anionac.sendKeys('2000');
-    //año nacimiento
+    //numero de telefono
     let telefono = driver.findElement({xpath:'//*[@id="phone-input"]'});
     await driver.sleep(2000);
     telefono.sendKeys('63885630');
